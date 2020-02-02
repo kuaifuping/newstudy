@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       .flex-box{
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .flex-box > div{
+           border: 1px solid red;
+           margin: 10px;
+       }
+        .f-div{
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center; /*延主轴方向*/
+            justify-content: center;
+        }
+        .b-circle, .item{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 1px solid blue;
+        }
+        .box{
+            align-content: space-between;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+<p>
+   1. justify-content和justify-item区别
+</p>
+<div class="flex-box">
+    <div class="f-div">
+        <div class="b-circle"></div>
+    </div>
+    <div style="display: flex;justify-content: space-between; width: 400px;height: 400px">
+        <div class="b-circle"></div>
+        <div class="b-circle" style="align-self: flex-end;"></div>
+    </div>
+    <div style="display: flex;justify-content: space-between; width: 400px;height: 400px">
+        <div class="b-circle"></div>
+        <div class="b-circle" style="align-self: center;"></div>
+        <div class="b-circle" style="align-self: flex-end;"></div>
+    </div>
+    <div style="display: flex;justify-content: space-between;flex-wrap: wrap;align-content:space-between ; width: 400px;height: 400px">
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+    </div>
+    <div style="display: flex;justify-content: space-between;flex-wrap: wrap;align-content:space-between ; width: 400px;height: 400px">
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+        <div class="b-circle"></div>
+    </div>
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</div>
+</body>
+</html>
