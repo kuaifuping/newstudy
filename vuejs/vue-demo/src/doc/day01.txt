@@ -1,0 +1,28 @@
+1、class&style
+  #class
+  对象语法：
+    <div v-bind:class="{ active: isActive }"></div>
+    data: {
+      isActive: true,
+      hasError: false
+    }
+  数组语法
+    <div v-bind:class="[activeClass, errorClass]"></div>
+
+     data: {
+       activeClass: 'active',
+       errorClass: 'text-danger'
+     }
+  #绑定内联样式
+  对象语法：
+    <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
+    data: {
+      activeColor: 'red',
+      fontSize: 30
+    }
+  数组语法：
+    <div v-bind:style="[baseStyles, overridingStyles]"></div>
+2、v-if  v-show
+  v-if:真正的条件渲染
+  v-show: display: block 和none的切换
+  对比：v-if有切换开销大，v-show渲染开销大

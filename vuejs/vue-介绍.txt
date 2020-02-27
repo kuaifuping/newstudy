@@ -1,0 +1,12 @@
+1、计算属性：
+    const vm = new Vue({
+        el: "app-2",
+        data:{
+            name: "Jakson",
+        },
+        computed:{
+            getName: function() {
+                return this.name;
+            }
+        },
+    })
