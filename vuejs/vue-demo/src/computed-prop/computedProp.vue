@@ -25,7 +25,7 @@
     name: "computedProp",
     data() {
       return {
-        msg: "我是一条消息!",
+        msg: "我是一条消息!1",
         loginType:"username",
         loginName: "fafdafa"
       }
